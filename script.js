@@ -25,16 +25,16 @@ const btn=document.querySelector('#play');
 count=document.querySelector('#site');
 
 function countn() {
-//https://api.countapi.xyz/create?namespace=Word&key=tapassahu&value=0
-//https://api.countapi.xyz/get/Word/tapassahu
-//https://api.countapi.xyz/update/Word/tapassahu/?amount=1
-return fetch('https://api.countapi.xyz/update/Word/tapassahu/?amount=1')
+//https://api.countapi.xyz/create?namespace=Word&key=sipra&value=0
+//https://api.countapi.xyz/get/Word/sipra
+//https://api.countapi.xyz/update/Word/sipra/?amount=1
+return fetch('https://api.countapi.xyz/update/Word/sipra/?amount=1')
 .then(res=>res.json())
 .then(data=>count.innerHTML=data.value)
 }
 
 function getcount(){
-  return fetch('https://api.countapi.xyz/get/Word/tapassahu')
+  return fetch('https://api.countapi.xyz/get/Word/sipra')
   .then(res => res.json())
   .then(data => count.innerHTML=data.value)
 }
